@@ -1,0 +1,8 @@
+{
+  "name": "PyQuest",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "short_name": "PyQuest",
+  "id": "pyquest-mobile",
+  "description": "PyQuest is an educational application for learning to program in Python."
+}
