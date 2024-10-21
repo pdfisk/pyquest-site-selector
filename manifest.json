@@ -1,8 +1,70 @@
 {
+  "id": "/",
+  "dir": "ltr",
+  "lang": "en",
   "name": "PyQuest",
-  "theme_color": "#000000",
-  "background_color": "#000000",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "/",
   "short_name": "PyQuest",
-  "id": "pyquest-mobile",
-  "description": "PyQuest is an educational application for learning to program in Python."
+  "theme_color": "#FFFFFF",
+  "description": "PyQuest is an educational application for learning to program in Python.",
+  "orientation": "any",
+  "background_color": "#FFFFFF",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "screenshots": [
+    {
+      "src": "/resource/screenshots/top_menu.png"
+    },
+    {
+      "src": "/resource/screenshots/projects.png"
+    },
+    {
+      "src": "/resource/screenshots/editor.png"
+    },
+    {
+      "src": "/resource/screenshots/chicklet_1.png"
+    }
+  ],
+  "features": [
+    "Cross Platform",
+    "fast"
+  ],
+  "icons": [
+    {
+      "src": "/resource/icons/python-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/resource/icons/python-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/resource/icons/python-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/resource/icons/python-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": [
+    "education"
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "edge_side_panel": {}
 }
