@@ -25,25 +25,6 @@
     <!-- Shortcut icon setup -->
     <link rel="shortcut icon" type="image/png" href="resource/icons/favicon.png" />
     <link rel="mask-icon" href="resource/icons/favicon.png" />
-    <noscript><h1>JavaScript must be enabled for this app</h1></noscript>
-    <script>navigator.serviceWorker.register("/pwabuilder-sw.js")</script>
-    <script data-build="2023-08-07T20:52:52">
-      if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-        window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/pwabuilder-sw.js')
-          .then(function(reg) {
-          reg.onupdatefound = function() {
-            var installingWorker = reg.installing;
-            installingWorker.onstatechange = function() {
-            if (installingWorker.state === 'installed') {
-              window.dispatchEvent(new Event('swUpdate'))
-            }
-            }
-          }
-          })
-          .catch(function(err) { console.error('service worker error', err) });
-        });
-      }</script>
     <style>
         body {
           padding: 0px;
@@ -99,6 +80,25 @@
     <script type="text/javascript" src="resource/js/ace/ace.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/vista.nocache.js"></script>
     <script type="text/javascript" src="js/vm.js"></script>
+    <noscript><h1>JavaScript must be enabled for this app</h1></noscript>
+    <script>navigator.serviceWorker.register("/pwabuilder-sw.js")</script>
+    <script data-build="2023-08-07T20:52:52">
+      if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+        window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/pwabuilder-sw.js')
+          .then(function(reg) {
+          reg.onupdatefound = function() {
+            var installingWorker = reg.installing;
+            installingWorker.onstatechange = function() {
+            if (installingWorker.state === 'installed') {
+              window.dispatchEvent(new Event('swUpdate'))
+            }
+            }
+          }
+          })
+          .catch(function(err) { console.error('service worker error', err) });
+        });
+      }</script>
 </body>
 
 </html>
